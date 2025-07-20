@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/62d3791af0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo3.png" alt="Logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-content">
+          <div class="header-text">
+            <h1>
+              I am <span>Vijay Kumar Prajapati</span><br />
+              Student of 🏫 NIT Trichy
+            </h1>
+            <h3><span id="typing"></span></h3>
+            <p id="intro-text" class="collapsed">
+              I am Vijay Kumar Prajapati, an MCA student at NIT Trichy and a
+              passionate freelancer with hands-on experience in both academics
+              and industry-level work.
+            </p>
+            <a href="#" id="read-more-btn">Read more</a>
+          </div>
+
+          <div class="profile-image-container">
+            <img
+              src="images/circle1.jpg"
+              alt="My Profile Photo"
+              class="profile-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profile.png" alt="Profile Picture" />
+          </div>
+          <div class="about-col-2">
+            <h4 class="sub-title">About Me</h4>
+            <p>
+              I am Vijay Kumar Prajapati, an MCA student at NIT Trichy and a
+              passionate freelancer with hands-on experience in both academics
+              and industry-level work. I have completed 10+ full-stack web
+              development projects covering both frontend and backend
+              technologies. I have also worked on 10+ Machine Learning and Deep
+              Learning projects using Python. I actively explore real-world
+              applications, gaining practical insights into industry trends and
+              technologies. My goal is to build impactful software solutions
+              through continuous learning and innovation.
+            </p>
+            <div class="tab-title">
+              <p
+                class="tab-links active-link"
+                onclick="opentab(event, 'skills')"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Development:</span> HTML, CSS, JavaScript,
+                  React
+                </li>
+                <li>
+                  <span>Backend Development:</span> Node.js, Express.js, PHP,
+                  MySQL, MongoDB
+                </li>
+                <li>
+                  <span>UI/UX Design:</span> Figma, Adobe XD, Responsive Design
+                </li>
+                <li><span>Programming Languages:</span> Java, C++, Python</li>
+                <li>
+                  <span>Machine Learning & Deep Learning:</span> Scikit-learn,
+                  TensorFlow, Pandas, NumPy
+                </li>
+                <li>
+                  <span>Version Control & Tools:</span> Git, GitHub, VS Code,
+                  Postman
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Freelancer:</span> Delivered 10+ full-stack web
+                  development projects
+                </li>
+                <li>
+                  <span>ML/DL Developer:</span> Completed 10+ ML and DL projects
+                  using Python
+                </li>
+                <li>
+                  <span>Intern at CDAC:</span> Worked on cybersecurity to
+                  protect websites
+                </li>
+                <li>
+                  <span>Project Collaborator:</span> Participated in academic
+                  and industry-level software projects
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>MCA – NIT Trichy:</span> 2023–2026</li>
+                <li>
+                  <span>BCA – J.J. College, Jhumri Telaiya, Koderma:</span>
+                  Completed in 2022
+                </li>
+                <li>
+                  <span
+                    >12th – C.H. +2 High School, Jhumri Telaiya, Koderma:</span
+                  >
+                  Completed in 2019
+                </li>
+                <li>
+                  <span
+                    >10th – C.H. +2 High School, Jhumri Telaiya, Koderma:</span
+                  >
+                  Completed in 2017
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Website Developer</h2>
+            <p>
+              Creating responsive and interactive websites using HTML, CSS,
+              JavaScript, and frameworks like Bootstrap or React. Skilled in
+              frontend UI development and backend integration using Node.js,
+              Express.js, PHP, and databases like MySQL or MongoDB.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI Design</h2>
+            <p>
+              Crafting user-friendly wireframes and clean app interfaces
+              tailored for web and mobile platforms. Skilled in using design
+              tools like Figma and Adobe XD. Focused on delivering intuitive and
+              visually appealing user experiences.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>AI/ML Developer</h2>
+            <p>
+              Building intelligent solutions using Python libraries like
+              Scikit-learn, TensorFlow, and Pandas. Skilled in training machine
+              learning and deep learning models for prediction, classification,
+              and data analysis. Experienced in preprocessing, evaluation, and
+              deployment of ML applications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="News Tracker App" />
+            <div class="layer">
+              <h3>News Tracker App</h3>
+              <p>
+                A real-time news application that fetches and displays the
+                latest headlines using dynamic API integration. Keeps users
+                updated across various categories.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="Portfolio Website" />
+            <div class="layer">
+              <h3>Personal Portfolio</h3>
+              <p>
+                A modern and responsive site showcasing my skills, projects, and
+                experience. Designed to reflect my journey as a developer and
+                freelancer.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="Music App" />
+            <div class="layer">
+              <h3>Latest Song App</h3>
+              <p>
+                A music streaming app that fetches and plays the newest songs
+                using real-time APIs. Users can explore trending tracks across
+                genres and artists.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> 2023aspire43@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 9801407265</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © with ❤️ Vijay 2025</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
